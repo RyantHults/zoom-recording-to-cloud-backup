@@ -20,9 +20,9 @@ $ pip3 install -r requirements.txt
 
 ## Usage ##
 
-_Attention: You will need a [Zoom Developer account](https://marketplace.zoom.us/) in order to create an [OAuth app](https://developers.zoom.us/docs/integrations/) with the required credentials_
+_Attention: You will need a [Zoom Developer account](https://marketplace.zoom.us/) in order to create a [Server-to-Server OAuth app](https://developers.zoom.us/docs/internal-apps/) with the required credentials_
 
-1. Create an [OAuth app](https://developers.zoom.us/docs/integrations/create/), set up your app and collect your credentials (`Account ID`, `Client ID`, `Client Secret`). For questions on this, [reference the docs](https://developers.zoom.us/docs/integrations/create/) on creating an OAuth app. Make sure you activate the app. Follow Zoom's [set up documentation](https://marketplace.zoom.us/docs/guides/build/server-to-server-oauth-app/) or [this video](https://www.youtube.com/watch?v=OkBE7CHVzho) for a more complete walk through.
+1. Create an [Server-to-Server OAuth app](https://developers.zoom.us/docs/internal-apps/), set up your app and collect your credentials (`Account ID`, `Client ID`, `Client Secret`). For questions on this, [reference the docs](https://developers.zoom.us/docs/integrations/create/) on creating an OAuth app. Make sure you activate the app. Follow Zoom's [set up documentation](https://marketplace.zoom.us/docs/guides/build/server-to-server-oauth-app/) or [this video](https://www.youtube.com/watch?v=OkBE7CHVzho) for a more complete walk through.
 
 2. Add the necessary scopes to your app. In your app's _Scopes_ tab, add the following scopes: 
     > `cloud_recording:read:list_user_recordings:admin`, `user:read:user:admin`, `user:read:list_users:admin`.
@@ -120,7 +120,7 @@ To enable sharepoint upload support:
 
 Note: When you first run the script, it will open your default browser for authentication. 
 
-5. Run command:
+## Run Command ##
 
 if you have a large amount of accounts to backup, 
 you can save them to a file and pass the file in with the userfile option (-f --userfile):
@@ -138,6 +138,5 @@ anything, you can run it with the --dry_run option
 ```sh
 python zoom-recording-cloud-backup.py --dry-run
 ```
-
 
 Note: files are temporarily downloaded to local storage before being uploaded, then automatically deleted after successful upload.
