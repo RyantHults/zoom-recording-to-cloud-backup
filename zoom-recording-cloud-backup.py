@@ -380,12 +380,9 @@ async def main():
         print("\nWho's recordings should be backed up?")
         print("1. All users in users.json")
         print("2. A specific user")
-        print("3. test user")
         choice = input("Enter choice [1]: ")
 
-        if choice == "3":
-            users = ["ryan.hults@monetate.com"]
-        elif choice == "2":
+        if choice == "2":
             print("\nEnter the email of the user who's recordings you wish to backup")
             users = [input("Enter user's email: ")]
         else:
