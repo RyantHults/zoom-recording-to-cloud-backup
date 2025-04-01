@@ -1,0 +1,27 @@
+{
+    "Zoom": {
+        "account_id": "<ACCOUNT_ID>",
+        "client_id": "<CLIENT_ID>",
+        "client_secret": "<CLIENT_SECRET>"
+    },
+    "Sharepoint": {
+        "tenant_id": "<ACCOUNT_ID>",
+        "client_id": "<CLIENT_ID>",
+        "drive_id": "<DRIVE_ID>",
+        "remote_folder_name": "<REMOTE_FOLDER_NAME>",
+        "site_url": "https://YOUR_SHAREPOINT_SITE_URL"
+    },
+    "_comment": "everything after this is optional",
+    "Storage": {
+        "completed_log": "completed-downloads.json",
+        "download_dir": "downloads"
+    },
+    "Recordings": {
+        "start_date": "2022-01-01",
+        "end_date": "2025-02-25",
+        "timezone": "UTC",
+        "strftime": "%Y.%m.%d-%H.%M%z",
+        "filename": "{meeting_time}-{topic}-{rec_type}-{recording_id}.{file_extension}",
+        "folder": "{meeting_time}-{topic}"
+    }
+}
