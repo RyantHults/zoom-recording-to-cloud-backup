@@ -6,7 +6,7 @@
 **Zoom Recording Cloud Backup** is a cross-platform Python app that utilizes Zoom's API (v2) to grab and organize all cloud recordings from a Zoom Business account and upload it to a sharepoint site
 
 ## Screenshot ##
-![screenshot](screenshot.png)
+
 
 ## Installation ##
 
