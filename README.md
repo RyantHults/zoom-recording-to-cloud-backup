@@ -20,9 +20,9 @@ $ pip3 install -r requirements.txt
 
 ## Usage ##
 
-_Attention: You will need a [Zoom Developer account](https://marketplace.zoom.us/) in order to create a [Server-to-Server OAuth app](https://developers.zoom.us/docs/internal-apps) with the required credentials_
+_Attention: You will need a [Zoom Developer account](https://marketplace.zoom.us/) in order to create an [OAuth app](https://developers.zoom.us/docs/integrations/) with the required credentials_
 
-1. Create a [server-to-server OAuth app](https://marketplace.zoom.us/user/build), set up your app and collect your credentials (`Account ID`, `Client ID`, `Client Secret`). For questions on this, [reference the docs](https://developers.zoom.us/docs/internal-apps/create/) on creating a server-to-server app. Make sure you activate the app. Follow Zoom's [set up documentation](https://marketplace.zoom.us/docs/guides/build/server-to-server-oauth-app/) or [this video](https://www.youtube.com/watch?v=OkBE7CHVzho) for a more complete walk through.
+1. Create an [OAuth app](https://developers.zoom.us/docs/integrations/create/), set up your app and collect your credentials (`Account ID`, `Client ID`, `Client Secret`). For questions on this, [reference the docs](https://developers.zoom.us/docs/integrations/create/) on creating an OAuth app. Make sure you activate the app. Follow Zoom's [set up documentation](https://marketplace.zoom.us/docs/guides/build/server-to-server-oauth-app/) or [this video](https://www.youtube.com/watch?v=OkBE7CHVzho) for a more complete walk through.
 
 2. Add the necessary scopes to your app. In your app's _Scopes_ tab, add the following scopes: 
     > `cloud_recording:read:list_user_recordings:admin`, `user:read:user:admin`, `user:read:list_users:admin`.
